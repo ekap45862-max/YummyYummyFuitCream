@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="author" content="Sarab">
+      <meta name="description" content="Sarab - Fast Food & Restaurant HTML Template">
+      <title>Yummy Yummy Fruit Cream</title>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet"/>
+      <!-- Bootstrap 5.3 -->
+      <link href="css/bootstrap.min.css" rel="stylesheet"/>
+      <!-- AOS Animate on Scroll -->
+      <link href="css/aos.css" rel="stylesheet"/>
+      <!-- Swiper -->
+      <link href="css/swiper-bundle.min.css" rel="stylesheet"/>
+      <!-- all min css -->
+      <link rel="stylesheet" href="css/all.min.css"/>
+      <!-- magnific CSS -->
+      <link rel="stylesheet" href="css/magnific-popup.css"/>
+      <!-- Style CSS -->
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <!-- ============================================================
+         TOP BAR
+         ============================================================ -->
+      <div id="topbar">
+         <div class="container">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+               <div class="top-contact d-flex flex-wrap">
+                  <span><i class="fas fa-phone-alt"></i>082323883853</span>
+                  <span><i class="fas fa-envelope"></i>yummyfru1t@gmail.com</span>
+                  <span><i class="fas fa-map-marker-alt"></i>Jl. Tembalang Baru</span>
+               </div>
+               <div class="d-flex align-items-center gap-3">
+                  <span class="ttag"><i class="fas fa-fire me-1"></i>Free Delivery Today!</span>
+                  <div class="tsoc">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-tiktok"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- ============================================================
+         NAVBAR
+         ============================================================ -->
+      <nav class="navbar navbar-expand-lg" id="nav">
+         <div class="container">
+            <a class="navbar-brand" href="#">
+               <div class="blogo">
+                  <div class="bico"><i class="fas fa-utensils"></i></div>
+                  <div>
+                     <div class="bname">Yummy Yummy<span>Fruit Cream</span></div>
+                     <div class="bsub">Ice Cream Sehat</div>
+                  </div>
+               </div>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <i class="fas fa-bars" style="color:var(--primary);font-size:1.35rem;"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+               <ul class="navbar-nav mx-auto">
+                  <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#chefs">Team</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#reservation">Pre Order</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#contact-section">Contact</a></li>
+               </ul>
+               <div class="d-flex align-items-center gap-1">
+                  <!-- FIX 1: Search button -->
+                  <button id="navSearchBtn" title="Search"><i class="fas fa-search"></i></button>
+                  <a href="cart.html" class="nav-link" aria-label="Buka keranjang belanja" style="position:relative;white-space:nowrap;">
+                     <i class="fas fa-shopping-cart"></i> Keranjang <span id="cartCount" style="display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:20px;padding:0 5px;border-radius:50px;background:#d85c8b;color:#fff;font-size:11px;margin-left:4px;">0</span>
+                  </a>
+                  <a href="#menu" class="nav-link nav-cta"><i class="fas fa-shopping-bag me-1"></i>Order Now</a>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- ============================================================
+         FIX 1 � SEARCH OVERLAY POPUP
+         ============================================================ -->
+      <div id="searchOv">
+         <button class="sovclose" id="searchClose"><i class="fas fa-times"></i></button>
+         <div class="sovbox">
+            <h4>What are you craving today?</h4>
+            <div class="sovinput">
+               <input type="text" id="searchInput" placeholder="Search burgers, pizza, chicken..." autocomplete="off"/>
+               <button><i class="fas fa-search"></i></button>
+            </div>
+            <!-- Categories inside search box -->
+            <div class="sovcats">
+               <div class="sovcat active" data-cat="all">
+                  <img src="img/menu/8.jpg" alt=""/>Semangka
+               </div>
+               <div class="sovcat" data-cat="burgers">
+                  <img src="img/menu/7.jpg" alt=""/>Mangga
+               </div>
+               <div class="sovcat" data-cat="pizza">
+                  <img src="img/menu/9.jpg" alt=""/>Stawberry
+               </div>
+               <div class="sovcat" data-cat="chicken">
+                  <img src="img/menu/3.jpg" alt=""/>Chicken
+               </div>
+               <div class="sovcat" data-cat="wraps">
+                  <img src="img/menu/4.jpg" alt=""/>Wraps
+               </div>
+               <div class="sovcat" data-cat="pasta">
+                  <img src="img/menu/5.jpg" alt=""/>Pasta
+               </div>
+               <div class="sovcat" data-cat="desserts">
+                  <img src="img/menu/6.jpg" alt=""/>Desserts
+               </div>
+            </div>
+            <div class="sovtrend">
+               <p><i class="fas fa-fire me-1" style="color:var(--secondary);"></i>Trending Searches</p>
+               <span class="ttag">Strawberry</span>
+               <span class="ttag">Oreo Vanila</span>
+               <span class="ttag">Semangka</span>
+            </div>
+         </div>
+      </div>
+      <!-- ============================================================
+         HERO
+         ============================================================ -->
+      <section id="hero">
+         <div class="hs hs1"></div>
+         <div class="hs hs2"></div>
+         <div class="hbgtxt">FOOD</div>
+         <div class="container">
+            <div class="row align-items-center g-5" style="min-height:88vh;">
+               <div class="col-lg-6">
+                  <div class="hbadge">
+                     <div class="hbi"><i class="fas fa-star"></i></div>
+                     <span>#1 Ice Cream di Semarang</span>
+                  </div>
+                  <h1 class="htitle">Ice Cream <span class="hl">Segar</span><br/>untuk Setiap Momen</h1>
+                  <p class="hdesc">Rasakan cita rasa yang berani yang dibuat dari bahan-bahan premium. Setiap gigitan adalah petualangan.</p>
+                  <div class="d-flex flex-wrap gap-3 mb-2">
+                     <a href="#menu" class="btn-red"><i class="fas fa-utensils"></i>Explore Menu</a>
+                     <!-- FIX 2: Magnific popup video trigger -->
+					 <a href="https://www.youtube.com/watch?v=RXv_uIN6e-Y" class="magnific_popup btn-play popup-youtube">
+						<div class="pico"><i class="fas fa-play"></i></div>
+						<span>Watch Our Story</span>
+					 </a>
+                  </div>
+                  <div class="hstats d-flex gap-3 flex-wrap mt-4">
+                     <div class="hstat"><span class="snum">850<em>+</em></span><small>Happy Customers</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum">6</span><small>Menu Items</small></div>
+                     <div class="sdiv"></div>
+                     <div class="hstat"><span class="snum">4</span><small>Expert Chefs</small></div>
+                     <div class="sdiv"></div>
+                 </div>
+               </div>
+               <div class="col-lg-6">
+                  <div style="position:relative;text-align:center;">
+                     <div class="hcircle">
+                        <img src="img/menu/9.jpg" alt="Ice Cream"/>
+                     </div>
+                     <div class="fcard fc1">
+                        <div class="fcoi r"><i class="fas fa-fire"></i></div>
+                        <div><span class="fcnum">Hot Deal</span><span class="fcsm">25% off today</span></div>
+                     </div>
+                     <div class="fcard fc2">
+                        <div class="fcoi y"><i class="fas fa-star"></i></div>
+                        <div><span class="fcnum">4.9/5</span><span class="fcsm">2k+ reviews</span></div>
+                     </div>
+                     <div class="fcard fc3">
+                        <div class="fcoi g"><i class="fas fa-clock"></i></div>
+                        <div><span class="fcnum">20 min</span><span class="fcsm">Fast delivery</span></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- MARQUEE -->
+      <div class="mqsec">
+         <div class="mqtrack">
+            <div class="mqitem"><i class="fas fa-circle"></i>Ice Cream Semangka</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Ice Cream Mangga</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Oreo Vanilla</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Ice Cream Strawberry</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Ice Cream Oreo Vanilla</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Jelly Ice Cream</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Mix Ice Cream</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Ice Cream Semangka</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Ice Cream Mangga</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Oreo Vanilla</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Ice Cream Strawberry</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Ice Cream Oreo Vanilla</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Jelly Ice Cream</div>
+            <div class="mqitem"><i class="fas fa-circle"></i>Mix Ice Cream</div>
+         </div>
+      </div>
+      <!-- CATEGORY -->
+      <section id="category">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">What We Offer</span>
+               <h2 class="stitle">Browse by <span>Category</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">Mulai dari kelembutan ice cream yang memanjakan lidah hingga kreasi rasa unik bertema dunia — temukan kelezatan favorit Anda di menu kami.</p>
+            </div>
+            <div class="row g-3 justify-content-center">
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="0">
+                  <div class="catcard active" data-filter="all">
+                     <img class="catimg" src="img/menu/12.jpg" alt=""/>
+                     <div class="catnm">Ice Cream</div>
+                     <div class="catct">36  Pcs</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="70">
+                  <div class="catcard" data-filter="burgers">
+                     <img class="catimg" src="img/menu/8.jpg" alt=""/>
+                     <div class="catnm">Semangka</div>
+                     <div class="catct">6 Pcs</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="140">
+                  <div class="catcard" data-filter="pizza">
+                     <img class="catimg" src="img/menu/7.jpg" alt=""/>
+                     <div class="catnm">Mangga</div>
+                     <div class="catct">6 Pcs</div>
+                  </div>
+               </div>
+               <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="210">
+                  <div class="catcard" data-filter="chicken">
+                     <img class="catimg" src="img/menu/9.jpg" alt=""/>
+                     <div class="catnm">Strawberry</div>
+                     <div class="catct">6 Pcs</div>
+                  </div>
+               </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="210">
+                  <div class="catcard" data-filter="Wraps">
+                     <img class="catimg" src="img/menu/10.jpg" alt=""/>
+                     <div class="catnm">Oreo Vanilla</div>
+                     <div class="catct">6 Pcs</div>
+                  </div>
+               </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-aos="zoom-in" data-aos-delay="210">
+                  <div class="catcard" data-filter="Desserts">
+                     <img class="catimg" src="img/menu/11.jpg" alt=""/>
+                     <div class="catnm">Jelly</div>
+                     <div class="catct">6 Pcs</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ABOUT -->
+      <section id="about">
+         <div class="container">
+            <div class="row align-items-center g-5">
+               <div class="col-lg-5" data-aos="fade-right">
+                  <div class="astack">
+                     <div class="amain"><img src="img/menu/13.jpg" alt="Restaurant"/></div>
+                  </div>
+               </div>
+               <div class="col-lg-7" data-aos="fade-left">
+                  <span class="slbl">Tentang Kami</span>
+                  <h2 class="stitle text-start">Kami Mengundang Anda<br/>untuk Menikmati Kesegaran<span><br>Ice Cream Kami</span></h2>
+                  <div class="sline lft"></div>
+                  <p class="sdesc mb-4">Berawal dari sebuah tim dengan mimpi yang besar—menyajikan es krim lezat yang membawa kebahagiaan dan keceriaan bagi semua orang. Hari ini, kami bangga dapat melayani para pecinta es krim setiap minggunya dengan rasa manis dan semangat manis yang sama seperti saat pertama kali kami buka.</p>
+                  <div class="mb-4">
+                     <div class="fti">
+                        <div class="ftico r"><i class="fas fa-leaf"></i></div>
+                        <div>
+                           <h6>100% Bahan Segar & Alami</h6>
+                           <p>WKami menggunakan susu cair segar, buah-buahan lokal, dan bahan-bahan alami pilihan yang dipetik serta diproses setiap hari demi menjaga cita rasa dan kesegaran sempurna.</p>
+                        </div>
+                     </div>
+                     <div class="fti">
+                        <div class="ftico g"><i class="fas fa-shipping-fast"></i></div>
+                        <div>
+                           <h6>Pengiriman Cepat & Anti-Lumer</h6>
+                           <p>Pesan secara online dan nikmati es krim dingin yang segar langsung di depan pintu rumah Anda dalam waktu kurang dari 25 menit, terjamin!</p>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="#menu" class="btn-red"><i class="fas fa-book-open"></i>View Full Menu</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- ============================================================
+         MENU � FIX 3 (filter works) + FIX 4 (plus opens popup)
+         ============================================================ -->
+      <section id="menu">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">What's Cooking</span>
+               <h2 class="stitle">Our Delicious <span>Menu</span></h2>
+               <div class="sline"></div>
+            </div>
+            <!-- FIX 3 � filter buttons -->
+            <div class="text-center mb-4" data-aos="fade-up">
+               <button class="filtbtn active" data-f="all">All</button>
+               <button class="filtbtn" data-f="burgers">Semangka</button>
+               <button class="filtbtn" data-f="pizza">Mangga</button>
+               <button class="filtbtn" data-f="chicken">Strawberry</button>
+               <button class="filtbtn" data-f="wraps">Oreo Vanilla</button>
+               <button class="filtbtn" data-f="desserts">Jelly</button>
+               <button class="filtbtn" data-f="pasta">Original</button>
+            </div>
+            <div class="row g-4" id="mgrid">
+               <!-- CARD 1: Burgers -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="burgers" data-aos="fade-up">
+                  <div class="mcard"
+                     data-img="img/menu/8.jpg"
+                     data-title="Semangka"
+                     data-cat="Ice Cream"
+                     data-price="Rp 6.000" data-old="Rp 7.000"
+                     data-rating="4.9" data-reviews="128"
+                     data-cal="80" data-time="12"
+                     data-desc="Es krim lembut dengan topping Semangka segar yang manis. Disajikan fresh untuk menghadirkan sensasi tropis yang menyegarkan di setiap gigitan."
+                     data-tags="Manis,Bestseller,Mangga">
+                     <div class="mimg">
+                        <img src="img/menu/8.jpg" alt="Ice Cream Semangka"/>
+                        <div class="mbdg hot"><i class="fas fa-star"></i> Trend</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Ice Cream</div>
+                        <div class="mtit">Semangka</div>
+                        <div class="mdesc">Dua scoop es krim dengan potongan semangka renyah, dan karamel manis</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">Rp 6.000 <small>Rp 7.000</small></div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(128)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 2: Pizza -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="pizza" data-aos="fade-up" data-aos-delay="80">
+                  <div class="mcard"
+                     data-img="img/menu/7.jpg"
+                     data-title="Mangga"
+                     data-cat="Ice Cream"
+                     data-price="Rp 6.000" data-old="Rp 6.500"
+                     data-rating="4.8" data-reviews="95"
+                     data-cal="80" data-time="18"
+                     data-desc="Es krim lembut dengan topping mangga segar yang manis, dipadukan dengan saus mangga yang menggugah selera. Disajikan fresh untuk menghadirkan sensasi tropis yang menyegarkan di setiap gigitan."
+                     data-tags="New,Fresh">
+                     <div class="mimg">
+                        <img src="img/menu/7.jpg" alt="Pizza"/>
+                        <div class="mbdg new"><i class="fas fa-star"></i> New</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Ice Cream</div>
+                        <div class="mtit">Mangga</div>
+                        <div class="mdesc">Dua scoop es krim dengan potongan mangga lembut dan karamel manis</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">Rp 6.000 <small>Rp 6.500</small></div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(95)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 3: Chicken -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="chicken" data-aos="fade-up" data-aos-delay="160">
+                  <div class="mcard"
+                     data-img="img/menu/9.jpg"
+                     data-title="Strawberry"
+                     data-cat="Ice Cream"
+                     data-price="Rp 6.000" data-old="Rp 8.000"
+                     data-rating="5.0" data-reviews="210"
+                     data-cal="50" data-time="15"
+                     data-desc="Es krim lembut dengan topping buah strawberry segar yang manis dan sedikit asam. Perpaduan creamy-nya es krim dan segarnya strawberry menciptakan sensasi lezat yang memanjakan lidah di setiap gigitan."
+                     data-tags="Segar,Bestseller">
+                     <div class="mimg">
+                        <img src="img/menu/9.jpg" alt="Chicken"/>
+                        <div class="mbdg"><i class="fas fa-star"></i> Best Seller</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Ice Cream</div>
+                        <div class="mtit">Strawberry</div>
+                        <div class="mdesc">Sensasi ganda strawberry ice cream dengan karamelisasi strawberry dan potongan buah strawberry segar</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">Rp 6.000 <small>Rp 8.000</small></div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(210)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 4: Wraps -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="wraps" data-aos="fade-up">
+                  <div class="mcard"
+                     data-img="img/menu/10.jpg"
+                     data-title="Oreo Vanilla"
+                     data-cat="Ice Cream"
+                     data-price="Rp 6.000" data-old=""
+                     data-rating="4.5" data-reviews="74"
+                     data-cal="80" data-time="10"
+                     data-desc="Es krim vanilla yang lembut dan creamy, dipadukan dengan topping biskuit Oreo yang renyah dan penuh rasa cokelat. Perpaduan klasik vanilla dan Oreo menciptakan sensasi manis dan lezat di setiap gigitan."
+                     data-tags="Creamy, crunchy, Manis">
+                     <div class="mimg">
+                        <img src="img/menu/10.jpg" alt="Wrap"/>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Ice Cream</div>
+                        <div class="mtit">Oreo Vanilla</div>
+                        <div class="mdesc">Dua skop es krim vanila lembut, remahan Oreo renyah dan lelehan saus cokelat</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">Rp 6.000</div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(74)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 5: Desserts -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="desserts" data-aos="fade-up" data-aos-delay="80">
+                  <div class="mcard"
+                     data-img="img/menu/11.jpg"
+                     data-title="Jelly"
+                     data-cat="Ice Cream"
+                     data-price="Rp 6.000" 
+                     data-rating="4.9" data-reviews="56"
+                     data-cal="60" data-time="8"
+                     data-desc="Warm molten chocolate cake with a gooey Nutella center, served alongside Madagascar vanilla bean ice cream with salted caramel drizzle and fresh berries."
+                     data-tags="Sweet,New,Jelly">
+                     <div class="mimg">
+                        <img src="img/menu/11.jpg" alt="Lava Cake"/>
+                        <div class="mbdg new"><i class="fas fa-star"></i> New</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Ice Cream</div>
+                        <div class="mtit">Jelly</div>
+                        <div class="mdesc">Ice Cream lembut dipadukan dengan Jelly yang kenyal</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">Rp 6.000</div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(56)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- CARD 6: Pasta -->
+               <div class="col-sm-6 col-lg-4 mwrap" data-c="pasta" data-aos="fade-up" data-aos-delay="160">
+                  <div class="mcard"
+                     data-img="img/menu/12.jpg"
+                     data-title="Vanilla"
+                     data-cat="Ice Cream"
+                     data-price="Rp 5.000"
+                     data-rating="4.9" data-reviews="88"
+                     data-cal="45" data-time="20"
+                     data-desc="Al dente tagliatelle tossed with mixed wild mushrooms, freshly shaved black truffle, aged parmesan, fresh thyme and a touch of cream in garlic butter."
+                     data-tags="Vegetarian,Chef's Pick,Italian">
+                     <div class="mimg">
+                        <img src="img/menu/12.jpg" alt="Pasta"/>
+                        <div class="mbdg hot">Chef's Pick</div>
+                        <div class="mhrt"><i class="far fa-heart"></i></div>
+                     </div>
+                     <div class="mbody">
+                        <div class="mcat">Ice Cream</div>
+                        <div class="mtit">Original Vanilla</div>
+                        <div class="mdesc">Ice Cream smooth dan manis</div>
+                        <div class="mfoot">
+                           <div>
+                              <div class="mprice">Rp 5.000</div>
+                              <div class="mstars"><i class="fas fa-star"></i> <span style="color:#bbb;font-size:.7rem;">(88)</span></div>
+                           </div>
+                           <button class="madd" title="View Details"><i class="fas fa-plus"></i></button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end #mgrid -->
+            <div class="text-center mt-5"><a href="#" class="btn-red"><i class="fas fa-th-large"></i>View Full Menu</a></div>
+         </div>
+      </section>
+	  
+	  
+      <!-- ============================================================
+         FIX 4 � MENU DETAIL POPUP MODAL
+         ============================================================ -->
+      <div id="menuPop">
+         <div class="mpbox">
+            <button class="mpclose" id="mpClose"><i class="fas fa-times"></i></button>
+            <div class="mpimg"><img id="mpImg" src="" alt=""/></div>
+            <div class="mpbody">
+               <div id="mpCat"></div>
+               <div id="mpTitle"></div>
+               <div id="mpStars"></div>
+               <div id="mpDesc"></div>
+               <div id="mpPrice"></div>
+               <div class="mpmeta" id="mpMeta"></div>
+               <div class="mpqty">
+                  <button class="mpqbtn" id="mpMinus">-</button>
+                  <span class="mpqnum" id="mpQnum">1</span>
+                  <button class="mpqbtn" id="mpPlus">+</button>
+                  <span style="font-size:.82rem;color:#aaa;margin-left:9px;">portion</span>
+               </div>
+               <div class="mptags" id="mpTags"></div>
+               <button class="mpaddcart" id="mpAddCart"><i class="fas fa-shopping-cart"></i>Add to Cart</button>
+            </div>
+         </div>
+      </div>
+      <!-- SPECIAL OFFER -->
+      <section id="special">
+         <div class="spbg"></div>
+         <div class="container" style="position:relative;z-index:2;">
+            <div class="row align-items-center g-5">
+               <div class="col-lg-6" data-aos="fade-right">
+                  <div class="sptag"><i class="fas fa-bolt me-1"></i>Promo Terbatas</div>
+                  <h2 class="sptitle">Diskon 25%<br/>Ice Cream<br/><span>Stawberry</span></h2>
+                  <p class="spdesc">Jangan sampai terlewat promo spesial akhir pekan! Nikmati kombinasi es krim signature favorit kami lengkap dengan topping melimpah dan milkshake premium dengan harga terbaik.</p>
+                  <div class="cdwrap">
+                     <div class="cditem"><span class="cdnum" id="cdH">08</span><span class="cdlbl">Hours</span></div>
+                     <div class="cditem"><span class="cdnum" id="cdM">45</span><span class="cdlbl">Minutes</span></div>
+                     <div class="cditem"><span class="cdnum" id="cdS">30</span><span class="cdlbl">Seconds</span></div>
+                  </div>
+                  <a href="#menu" class="btn-red"><i class="fas fa-shopping-cart"></i>Grab the Deal</a>
+               </div>
+               <div class="col-lg-6" data-aos="fade-left">
+                  <div class="spimgw">
+                     <div class="spglow"></div>
+                     <div class="sppbdg"><span class="old">Rp 8.000</span><span class="np">Rp 6.000</span></div>
+                     <img src="img/menu/9.jpg" alt="Special Burger"/>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <!-- ============================================================
+         GALLERY � FIX 7 (click opens detail popup)
+         ============================================================ -->
+      <section id="gallery">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Ice Cream Showcase</span>
+               <h2 class="stitle">Let's See Our <span>Ice Cream</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="ggrid" data-aos="fade-up">
+               <div class="gitem"
+                  data-gi="0"
+                  data-gimg="img/portfolio/work1.jpg"
+                  data-gtitle="Gourmet Burgers"
+                  data-gdesc="Our award-winning smash burgers, hand-crafted with 100% premium beef, aged cheddar and house-made sauces.">
+                  <img src="img/menu/7.jpg" alt="Burgers"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i>Ice Cream Mangga</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="1"
+                  data-gimg="img/portfolio/work2.jpg"
+                  data-gtitle="Wood-Fired Pizza"
+                  data-gdesc="Authentic Neapolitan-style pizzas fired at 900deg F in our wood-burning stone oven for the perfect char.">
+                  <img src="img/menu/8.jpg" alt="Pizza"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Ice Cream Semangka</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="2"
+                  data-gimg="img/portfolio/work3.jpg"
+                  data-gtitle="Crispy Fried Chicken"
+                  data-gdesc="Double-brined, hand-battered chicken fried to golden perfection using our 15-spice secret blend.">
+                  <img src="img/menu/9.jpg" alt="Chicken"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Ice Cream Strawberry</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="3"
+                  data-gimg="img/portfolio/work4.jpg"
+                  data-gtitle="Sweet Desserts"
+                  data-gdesc="Handcrafted desserts - from molten lava cakes to artisan ice cream sundaes and seasonal pastries.">
+                  <img src="img/menu/11.jpg" alt="Desserts"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i>Ice Cream Jelly</span></div>
+               </div>
+               <div class="gitem"
+                  data-gi="4"
+                  data-gimg="img/portfolio/work5.jpg"
+                  data-gtitle="Fresh Wraps &amp; Rolls"
+                  data-gdesc="Loaded fresh wraps packed with grilled proteins, crunchy vegetables and our house-made sauces.">
+                  <img src="img/menu/10.jpg" alt="Wraps"/>
+                  <div class="gover"><span><i class="fas fa-expand-alt"></i> Oreo &amp; Vanila</span></div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- FIX 7 � GALLERY POPUP -->
+      <div id="galPop">
+         <div class="gpbox">
+            <button class="gpclose" id="gpClose"><i class="fas fa-times"></i></button>
+            <img id="gpImg" src="" alt=""/>
+            <div class="gpcap">
+               <h5 id="gpTitle"></h5>
+               <p id="gpDesc"></p>
+            </div>
+            <div class="gpnav">
+               <button id="gpPrev"><i class="fas fa-chevron-left me-1"></i>Prev</button>
+               <button id="gpNext">Next <i class="fas fa-chevron-right ms-1"></i></button>
+            </div>
+         </div>
+      </div>
+	  
+	  
+      <!-- ============================================================
+         HISTORY � FIX 8 (alternating left/right text)
+         ============================================================ -->
+      <section id="history">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Perjalanan Kami</span>
+               <h2 class="stitle">Cerita di Balik Manisnya <span>Yummy Yummy Ice Cream</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">Dari impian menghadirkan es krim terlezat hingga resmi menyapa Anda bulan ini—setiap sendok dibuat dengan cinta, kelembutan, dan bahan-bahan terbaik.</p>
+            </div>
+            <div class="timeline" data-aos="fade-up">
+               <!-- ODD ? text on LEFT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">Awal 2026</div>
+                     <h5>Impian & Eksperimen Rasa</h5>
+                     <p>Yummy Yummy Ice Cream bermula dari keinginan menghadirkan es krim manis yang pas, segar, dan bikin ketagihan. Kami mulai mengeksplorasi bahan-bahan berkualitas dan memadukan rasa-rasa unik di dapur eksperimen kami.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                   <div class="tlyear">Awal 2026</div>
+                     <h5>Impian & Eksperimen Rasa</h5>
+                     <p>Yummy Yummy Ice Cream bermula dari keinginan menghadirkan es krim manis yang pas, segar, dan bikin ketagihan. Kami mulai mengeksplorasi bahan-bahan berkualitas dan memadukan rasa-rasa unik di dapur eksperimen kami.</p>
+                  </div>
+               </div>
+               <!-- EVEN ? text on RIGHT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">Pertengahan 2026</div>
+                     <h5>Racikan Resep Sempurna</h5>
+                     <p>Setelah melalui puluhan kali uji coba (taste test) bersama para pecinta es krim, kami berhasil menyempurnakan resep signature Yummy Yummy—es krim super lembut dengan cita rasa yang kaya dan bahan alami.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                  <div class="tlyear">Pertengahan 2026</div>
+                     <h5>Racikan Resep Sempurna</h5>
+                     <p>Setelah melalui puluhan kali uji coba (taste test) bersama para pecinta es krim, kami berhasil menyempurnakan resep signature Yummy Yummy—es krim super lembut dengan cita rasa yang kaya dan bahan alami.</p>
+                  </div>
+               </div>
+               <!-- ODD ? text on LEFT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">Oktober 2026</div>
+                     <h5>Grand Opening!</h5>
+                     <p>Bulan ini, Yummy Yummy Ice Cream resmi dibuka! Kami sangat bersemangat menyambut Anda dan menyajikan varian rasa favorit yang siap menceriakan hari-hari Anda.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                     <div class="tlyear">Oktober 2026</div>
+                     <h5>Grand Opening!</h5>
+                     <p>Bulan ini, Yummy Yummy Ice Cream resmi dibuka! Kami sangat bersemangat menyambut Anda dan menyajikan varian rasa favorit yang siap menceriakan hari-hari Anda.</p>
+                  </div>
+               </div>
+               <!-- EVEN ? text on RIGHT -->
+               <div class="tli">
+                  <div class="tl-left">
+                     <div class="tlyear">Masa Depan</div>
+                     <h5>Menyebarkan Kebahagiaan</h5>
+                     <p>Perjalanan kami baru saja dimulai! Kami berkomitmen untuk terus berinovasi menghadirkan varian rasa baru yang unik, layanan pemesanan online yang cepat, dan senyuman di setiap cup es krim kami.</p>
+                  </div>
+                  <div class="tl-center">
+                     <div class="tldot"></div>
+                  </div>
+                  <div class="tl-right">
+                     <div class="tlyear">Masa Depan</div>
+                     <h5>Menyebarkan Kebahagiaan</h5>
+                     <p>Perjalanan kami baru saja dimulai! Kami berkomitmen untuk terus berinovasi menghadirkan varian rasa baru yang unik, layanan pemesanan online yang cepat, dan senyuman di setiap cup es krim kami.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <!-- CHEFS -->
+      <section id="chefs">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">The Yummy Yummy Ice Cream Team</span>
+               <h2 class="stitle">Meet Our<span>Team</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4 justify-content-center">
+               <div class="col-sm-6 col-lg-2" data-aos="fade-up" data-aos-delay="0">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/7E.JPG" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">Eka Putri</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-2" data-aos="fade-up" data-aos-delay="80">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/6J.JPG" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">Juliana Tiara</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-2" data-aos="fade-up" data-aos-delay="160">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/5D.JPG" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">Dwisa Aulia</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-2" data-aos="fade-up" data-aos-delay="240">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/9.jpg" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">Rezvan Nadhif</div>
+                     </div>
+                  </div>
+               </div>
+                  <div class="col-sm-6 col-lg-2" data-aos="fade-up" data-aos-delay="240">
+                  <div class="chcard">
+                     <div class="chimg">
+                        <img src="img/chefs/8.jpg" alt=""/>
+                        <div class="chsoc"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a></div>
+                     </div>
+                     <div class="chbody">
+                        <div class="chnm">Achmad Leo</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <!-- HOURS -->
+      <section id="hours">
+         <div class="hrsbg"></div>
+         <div class="container" style="position:relative;z-index:2;">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl" style="color:#a5d6bc;">Opening Hours</span>
+               <h2 class="stitle" style="color:#fff;">We're Open <span style="color:var(--secondary);">For You</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4 align-items-start">
+               <div class="col-lg-5" data-aos="fade-right">
+                  <div class="hrscard">
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>Sabtu - Minggu</span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot off"></div>
+                           <span class="hrstime" style="color:#ff6b6b;">Closed</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>Senin - Selasa</span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">10.20 - 12.30</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>Rabu - Kamis </span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">11.30-12.30</span>
+                        </div>
+                     </div>
+                     <div class="hrsrow">
+                        <span class="hrsday"><i class="fas fa-calendar-day me-2" style="color:var(--secondary);"></i>Jumat</span>
+                        <div class="d-flex align-items-center gap-2">
+                           <div class="hdot on"></div>
+                           <span class="hrstime">10.20 - 13.00</span>
+                        </div>
+                     </div>
+                     </div>
+               </div>
+               <div class="col-lg-3" data-aos="zoom-in">
+                  <div class="hrscta">
+                     <i class="fas fa-truck-fast fa-2x mb-3" style="color:rgba(255,255,255,.8);"></i>
+                     <h4>Order Online</h4>
+                     <p>Get hot food delivered in 25 minutes</p>
+                     <a href="#menu" class="btnw">Order Now ?</a>
+                  </div>
+               </div>
+               <div class="col-lg-4" data-aos="fade-left">
+                  <div class="hrscard">
+                     <h5 style="color:#fff;margin-bottom:18px;font-family:'Poppins',sans-serif;font-size:.95rem;font-weight:700;"><i class="fas fa-map-marker-alt me-2" style="color:var(--secondary);"></i>Find Us</h5>
+                     <div class="hrsrow"><span class="hrsday"><i class="fas fa-location-dot me-2" style="color:var(--secondary);"></i>Address</span><span class="hrstime" style="font-size:.8rem;">Tembalang</span></div>
+                     <div class="hrsrow"><span class="hrsday"><i class="fas fa-phone me-2" style="color:var(--secondary);"></i>Phone</span><span class="hrstime" style="font-size:.8rem;">082323883853</span></div>
+                     <div class="hrsrow"><span class="hrsday"><i class="fas fa-envelope me-2" style="color:var(--secondary);"></i>Email</span><span class="hrstime" style="font-size:.8rem;">yummyfru1t@gmail.com</span></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+	  
+      <!-- TESTIMONIALS -->
+      <section id="testimonials">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Apa Kata Mereka?</span>
+               <h2 class="stitle">Our Customers <span>Feedback</span></h2>
+               <div class="sline"></div>
+            </div>
+            <div class="swiper tesSwiper" data-aos="fade-up">
+               <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">Es Krim semangkanya enak dan manisnya pas!</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/1.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">Ali</div>
+                              <div class="tesrl">Mahasiswa</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">Enak dan ga bikin sakit tenggorokan</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/2.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">Salma</div>
+                              <div class="tesrl">Mahasiswa</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">Jujur ini es krim sehat banget karena pakai toping buah yang fresh dan berkualitas</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/3.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">Jeni</div>
+                              <div class="tesrl">Mahasiswa</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="swiper-slide">
+                     <div class="tescard">
+                        <div class="tesq">"</div>
+                        <div class="tess"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <p class="testxt">Banyak banget variannya mulai dari buah hingga crumble</p>
+                        <div class="tesauth">
+                           <img src="img/testimonial/4.jpg" alt=""/>
+                           <div>
+                              <div class="tesnm">David</div>
+                              <div class="tesrl">Mahasiswa</div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-pagination mt-4" style="position:static;"></div>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- RESERVATION FORM -->
+      <section id="reservation">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Pre Order</span>
+               <h2 class="stitle">Buat Pesanan <span>Sesuai Mood Kamu</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">Pesan ice cream favoritmu melalui sistem Open PO kami! Lakukan pemesanan sesuai jadwal yang tersedia agar kamu tidak kehabisan.</p>
+            </div>
+            <div class="row g-4 align-items-start">
+               <div class="col-lg-4" data-aos="fade-right">
+                  <div style="background:var(--dark);border-radius:18px;padding:36px;">
+                     <h4 style="color:#fff;font-size:1.3rem;margin-bottom:8px;">Contact Info</h4>
+                     <p style="color:rgba(255,255,255,.55);font-size:.85rem;margin-bottom:26px;">Kami siap melayani pemesanan ice cream favoritmu dengan rasa manis dan menyegarkan. Yuk, pesan sekarang selama Open PO masih dibuka!</p>
+                     <div class="d-flex flex-column gap-3">
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-clock"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Jam Operasional</strong><span style="color:#fff;font-size:.87rem;">Senin - Sabtu 10.20-13.00</span></div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-phone-alt"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Telepon Pemesanan</strong><span style="color:#fff;font-size:.87rem;">082323883853</span></div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-users"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Group</strong><span style="color:#fff;font-size:.87rem;">10 Porsi Ice Cream</span></div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                           <div style="width:46px;height:46px;border-radius:11px;background:rgba(232,40,26,.2);display:flex;align-items:center;justify-content:center;color:var(--primary);font-size:1.1rem;flex-shrink:0;"><i class="fas fa-map-marker-alt"></i></div>
+                           <div><strong style="display:block;color:#ccc;font-size:.78rem;text-transform:uppercase;letter-spacing:.8px;">Lokasi</strong><span style="color:#fff;font-size:.87rem;">Politeknik Negeri Semarang</span></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-8" data-aos="fade-left">
+                  <div class="fcard">
+                     <div class="row g-3">
+                        <div class="col-sm-6"><label class="flbl">Nama Lengkap *</label><input type="text" class="fctrl" placeholder="John Doe"/></div>
+                        <div class="col-sm-6"><label class="flbl">Nomor Telepon *</label><input type="tel" class="fctrl" placeholder="+1 (800) 000-0000"/></div>
+                        <div class="col-sm-6"><label class="flbl">Email *</label><input type="email" class="fctrl" placeholder="you@email.com"/></div>
+                        <div class="col-sm-6">
+                           <label class="flbl">Jumlah PO *</label>
+                           <select class="fctrl">
+                              <option>1 Porsi</option>
+                              <option>2 Porsi</option>
+                              <option>3 - 4 Porsi</option>
+                              <option>5 - 6 Porsi</option>
+                              <option>7 -10 Porsi</option>
+                              <option>10+ Porsi</option>
+                           </select>
+                        </div>
+                        <div class="col-sm-6"><label class="flbl">Tanggal *</label><input type="date" class="fctrl"/></div>
+                        <div class="col-sm-6">
+                           <label class="flbl">Waktu *</label>
+                           <select class="fctrl">
+                              <option>09:00 WIB</option>
+                              <option>10:00 WIB</option>
+                              <option>11:00 WIB</option>
+                              <option>12:00 WIB</option>
+                              <option>13:00 WIB</option>
+                              <option>14:00 WIB</option>
+                              <option>15:00 WIB</option>
+                              <option>16:00 WIB</option>
+                              <option>17:00 WIB</option>
+                           </select>
+                        </div>
+                        <div class="col-12"><label class="flbl">Special Requests</label><textarea class="fctrl" rows="3" placeholder="Allergies, dietary needs, special occasions..."></textarea></div>
+                        <div class="col-12"><button class="btn-red w-100 justify-content-center" id="resBtn"><i class="fas fa-calendar-check"></i>Konfirmasi Pre-Order</button></div>
+                     </div>
+                     <div class="sucmsg" id="resOk">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Ice Cream telah dipesan! Kami akan segera konfirmasi melalui Email</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- BLOG -->
+      <section id="blog">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">News &amp; Updates</span>
+               <h2 class="stitle">Our Latest <span>Blog</span> Posts</h2>
+               <div class="sline"></div>
+            </div>
+            <div class="row g-4">
+               <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                  <div class="blcard">
+                     <div class="blimg">
+                        <img src="img/menu/9.jpg" alt=""/>
+                        <div class="bldatebdg"><span class="bd">10</span><span class="bm">Oct</span></div>
+                     </div>
+                     <div class="blbody">
+                        <div class="bltag">Ice &amp; Health</div>
+                        <div class="bltit"><a href="#">“Es Krim Topping Strawberry: Manisnya Buah, Indahnya Rasa.</a></div>
+                        <div class="blmeta"><span><i class="fas fa-user"></i>YummyFru1t</span><span><i class="fas fa-comment"></i>24 Comments</span></div>
+                        <a href="#" class="blmore">Read More <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+                  <div class="blcard">
+                     <div class="blimg">
+                        <img src="img/menu/10.jpg" alt=""/>
+                        <div class="bldatebdg"><span class="bd">12</span><span class="bm">Oct</span></div>
+                     </div>
+                     <div class="blbody">
+                        <div class="bltag">Sweet</div>
+                        <div class="bltit"><a href="#">Es Krim Oreo, Kombinasi Sempurna untuk Pecinta Manis.</a></div>
+                        <div class="blmeta"><span><i class="fas fa-user"></i>YummyFru1t</span><span><i class="fas fa-comment"></i>18 Comments</span></div>
+                        <a href="#" class="blmore">Read More <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+                  <div class="blcard">
+                     <div class="blimg">
+                        <img src="img/menu/11.jpg" alt=""/>
+                        <div class="bldatebdg"><span class="bd">15</span><span class="bm">Oct</span></div>
+                     </div>
+                     <div class="blbody">
+                        <div class="bltag">Recipes</div>
+                        <div class="bltit"><a href="#">Cara Seru Menikmati Es Krim dengan Topping Jelly yang Berwarna-Warni.</a></div>
+                        <div class="blmeta"><span><i class="fas fa-user"></i>YummyFru1t</span><span><i class="fas fa-comment"></i>32 Comments</span></div>
+                        <a href="#" class="blmore">Read More <i class="fas fa-arrow-right"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- NEWSLETTER -->
+      <section id="newsletter">
+         <div class="nlbg"></div>
+         <div class="container">
+            <div class="nlw text-center" data-aos="zoom-in">
+               <span class="slbl" style="color:rgba(255,255,255,.7);">Stay Connected</span>
+               <h2 class="mb-3" style="color:#fff;">Berlangganan &amp; Dapatkan Penawaran <span style="color:var(--secondary);">Eksklusif</span></h2>
+               <p class="mb-4" style="color:rgba(255,255,255,.78);">Dapatkan diskon 15% untuk pesanan pertama Anda plus akses awal ke item menu baru.</p>
+               <div class="nl-form-wrap">
+                  <input class="nlinput" type="email" id="nlEmail" placeholder="Masukkan Alamat Email Anda..."/>
+                  <button class="nlbtn" id="nlBtn"><i class="fas fa-paper-plane me-1"></i>Berlangganan</button>
+               </div>
+               <p style="color:rgba(255,255,255,.45);font-size:.76rem;margin-top:11px;"><i class="fas fa-lock me-1"></i>Tidak ada spam, berhenti berlangganan kapan saja.</p>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- ============================================================
+         FIX 6 � CONTACT FORM
+         ============================================================ -->
+      <section id="contact-section">
+         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+               <span class="slbl">Hubungi Kami</span>
+               <h2 class="stitle">Contact <span>Us</span></h2>
+               <div class="sline"></div>
+               <p class="sdesc mx-auto" style="max-width:480px;">Punya pertanyaan, masukan, atau ingin merencanakan acara khusus? Kami senang mendengar dari Anda.</p>
+            </div>
+            <div class="row g-4">
+               <div class="col-lg-4" data-aos="fade-right">
+                  <div class="ctdark">
+                     <h4>Bicara dengan Kami</h4>
+                     <p class="ctsub">Kami akan merespons dalam waktu 2 jam selama jam kerja.</p>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="ctinfo"><strong>Alamat</strong><span>Jl. Tembalang Baru Iv<br/>No. 60</span></div>
+                     </div>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="ctinfo"><strong>Telepon</strong><span>082323883853</span></div>
+                     </div>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-envelope"></i></div>
+                        <div class="ctinfo"><strong>Email</strong><span>yummyfru1t@gmail.com</span></div>
+                     </div>
+                     <div class="ctitem">
+                        <div class="cticon"><i class="fas fa-clock"></i></div>
+                        <div class="ctinfo"><strong>Jam Kerja</strong><span>Senin - Jumat 10.00-13.00</span></div>
+                     </div>
+                     <div class="ctsocrow">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-8" data-aos="fade-left">
+                  <div class="fcard">
+                     <div class="row g-3">
+                        <div class="col-sm-6"><label class="flbl">Nama *</label><input type="text" class="fctrl" placeholder="Dwisa Aulia"/></div>
+                        <div class="col-sm-6"><label class="flbl">Email *</label><input type="email" class="fctrl" placeholder="you@email.com"/></div>
+                        <div class="col-sm-6"><label class="flbl">Nomor Telepon</label><input type="tel" class="fctrl" placeholder="0812345678910"/></div>
+                        <div class="col-sm-6">
+                           <label class="flbl">Subject *</label>
+                           <select class="fctrl">
+                              <option>Pertanyaan Umum</option>
+                              <option>Katering &amp; Acara</option>
+                              <option>Umpan Balik</option>
+                              <option>Partnership</option>
+                              <option>Media &amp; Pers</option>
+                           </select>
+                        </div>
+                        <div class="col-12"><label class="flbl">Pesan *</label><textarea class="fctrl" rows="5" placeholder="Write your message here..."></textarea></div>
+                        <div class="col-12"><button class="btn-red" id="ctcBtn"><i class="fas fa-paper-plane"></i>Kirim Pesan</button></div>
+                     </div>
+                     <div class="sucmsg" id="ctcOk">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Pesan terkirim! Kami akan membalas dalam 2 jam.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+	  
+      <!-- FOOTER -->
+      <footer>
+         <div class="container">
+            <div class="row g-5">
+               <div class="col-lg-4">
+                  <div class="fnm">Yummy Fr<span>uit Cream</span></div>
+                  <p class="fdesc">Kami menghadirkan perpaduan es krim lembut dengan aneka topping lezat dalam setiap sajian yang manis, menyegarkan, dan terjangkau. Setiap cup dibuat dengan cinta untuk menghadirkan kebahagiaan di setiap gigitan. 🍦💕</p>
+                  <div class="fsoc">
+                     <a href="#"><i class="fab fa-facebook-f"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-youtube"></i></a>
+                     <a href="#"><i class="fab fa-tiktok"></i></a>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-lg-2">
+                  <div class="ftit">Tautan Cepat</div>
+                  <ul class="flinks ps-0">
+                     <li><a href="#hero"><i class="fas fa-chevron-right"></i>Home</a></li>
+                     <li><a href="#about"><i class="fas fa-chevron-right"></i>About Us</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Our Menu</a></li>
+                     <li><a href="#reservation"><i class="fas fa-chevron-right"></i>Reservation</a></li>
+                     <li><a href="#blog"><i class="fas fa-chevron-right"></i>Blog</a></li>
+                     <li><a href="#contact-section"><i class="fas fa-chevron-right"></i>Contact</a></li>
+                  </ul>
+               </div>
+               <div class="col-sm-6 col-lg-2">
+                  <div class="ftit">Our Menu</div>
+                  <ul class="flinks ps-0">
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Ice Cream Semangka</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Ice Cream Mangga</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Ice Cream Strawberry</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Oreo Vanilla</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Ice Cream Vanila</a></li>
+                     <li><a href="#menu"><i class="fas fa-chevron-right"></i>Ice Cream Jelly</a></li>
+                  </ul>
+               </div>
+               <div class="col-lg-4">
+                  <div class="ftit">Hubungi Kami</div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-map-marker-alt"></i></div>
+                     <div class="fciinfo"><strong>Alamat</strong>Jl. Tembalang Baru IV, No. 60</div>
+                  </div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-phone-alt"></i></div>
+                     <div class="fciinfo"><strong>Telepon</strong>082323883853</div>
+                  </div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-envelope"></i></div>
+                     <div class="fciinfo"><strong>Email</strong>yummyfru1t@gmail.com</div>
+                  </div>
+                  <div class="fci">
+                     <div class="fciico"><i class="fas fa-clock"></i></div>
+                     <div class="fciinfo"><strong>Jam Operasional</strong>Senin - Jumat 10.00-13.00</div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="fbot">
+            <div class="container">
+               <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                  <div><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- Floating cart: link to the cart page -->
+      <a href="cart.html" id="floatingCart" aria-label="Buka keranjang belanja" style="position:fixed;right:22px;bottom:85px;z-index:999;display:flex;align-items:center;gap:9px;padding:13px 17px;border-radius:50px;background:#d85c8b;color:#fff;text-decoration:none;box-shadow:0 6px 20px #d85c8b55;font-weight:600;">
+         <i class="fas fa-shopping-cart"></i><span>Keranjang</span><span id="floatingCartCount" style="display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;padding:0 5px;border-radius:50%;background:#fff;color:#c84d7c;font-size:12px;">0</span>
+      </a>
+      <!-- Back to top -->
+      <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-chevron-up"></i></button>
+    
+	<!-- jQuery -->
+      <script src="js/jquery-3.7.1.min.js"></script>
+      <!-- Bootstrap 5 -->
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <!-- AOS -->
+      <script src="js/aos.js"></script>
+      <!-- Swiper -->
+      <script src="js/swiper-bundle.min.js"></script>
+      <!-- CounterUp -->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Main js -->
+      <script src="js/main.js"></script>
+      <!-- Yummy Yummy Fruit Cream: cart + quantity + cart badge integration -->
+      <script>
+      (function () {
+        const CART_KEY = "cart";
+        const getCart = () => {
+          try {
+            const value = JSON.parse(localStorage.getItem(CART_KEY) || "[]");
+            return Array.isArray(value) ? value : [];
+          } catch (e) { return []; }
+        };
+        const saveCart = cart => localStorage.setItem(CART_KEY, JSON.stringify(cart));
+        const updateCartBadges = () => {
+          const count = getCart().reduce((sum, item) => sum + Math.max(0, Number(item.quantity) || 0), 0);
+          ["cartCount", "floatingCartCount"].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) el.textContent = count;
+          });
+        };
+        document.addEventListener("DOMContentLoaded", function () {
+          const qtyEl = document.getElementById("mpQnum");
+          const minus = document.getElementById("mpMinus");
+          const plus = document.getElementById("mpPlus");
+          const add = document.getElementById("mpAddCart");
+
+          if (qtyEl && minus) minus.addEventListener("click", function (e) {
+            e.preventDefault();
+            qtyEl.textContent = Math.max(1, (parseInt(qtyEl.textContent, 10) || 1) - 1);
+          });
+          if (qtyEl && plus) plus.addEventListener("click", function (e) {
+            e.preventDefault();
+            qtyEl.textContent = Math.min(99, (parseInt(qtyEl.textContent, 10) || 1) + 1);
+          });
+
+          if (add && !add.dataset.cartIntegrated) {
+            add.dataset.cartIntegrated = "true";
+            add.addEventListener("click", function () {
+              const name = document.getElementById("mpTitle")?.textContent.trim();
+              const priceText = document.getElementById("mpPrice")?.textContent || "";
+              const match = priceText.match(/(?:Rp\.?\s*)?([\d.]+)/i);
+              const price = match ? Number(match[1].replace(/\./g, "")) : NaN;
+              const quantity = Math.max(1, parseInt(qtyEl?.textContent || "1", 10) || 1);
+              const image = document.getElementById("mpImg")?.getAttribute("src") || "";
+              if (!name || !Number.isFinite(price) || price <= 0) {
+                alert("Data produk belum lengkap. Tutup popup lalu pilih produk kembali.");
+                return;
+              }
+              const cart = getCart();
+              const existing = cart.find(item => item.name === name);
+              if (existing) existing.quantity = (Number(existing.quantity) || 0) + quantity;
+              else cart.push({ name, price, quantity, image });
+              saveCart(cart);
+              updateCartBadges();
+              if (qtyEl) qtyEl.textContent = "1";
+              alert(name + " berhasil ditambahkan ke keranjang!");
+            });
+          }
+          updateCartBadges();
+        });
+        window.addEventListener("storage", updateCartBadges);
+      })();
+      </script>
+   </body>
+</html>

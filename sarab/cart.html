@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keranjang | Yummy Yummy Fruit Cream</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css"><link rel="stylesheet" href="css/all.min.css">
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#fff7fa;color:#49343d;font-family:Poppins,Arial,sans-serif}.top{background:#fff;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid #f5dce6}.brand{font-weight:700;color:#c84d7c;text-decoration:none}.top a:last-child,.back{color:#c84d7c;text-decoration:none}main{max-width:950px;margin:38px auto;padding:0 18px}h1{font-weight:700;color:#c84d7c}.sub{color:#8b747d}.cart-item{display:flex;align-items:center;gap:16px;background:#fff;padding:18px;margin:16px 0;border-radius:16px;box-shadow:0 5px 20px #eacbd52b}.cart-item img{width:100px;height:100px;object-fit:cover;border-radius:12px}.details{flex:1;min-width:140px}.details h3{font-size:1.05rem;font-weight:600;margin:0 0 8px}.price{color:#c84d7c;font-weight:600}.qty{display:flex;align-items:center;gap:10px;margin-top:10px}.qty button,.remove{border:0;border-radius:9px;padding:8px 12px;cursor:pointer}.qty button{background:#ffe5ef;color:#a83c68}.remove{background:#fff0f0;color:#bd3f55}.summary{background:#fff;padding:22px;border-radius:16px;margin-top:25px}.total{display:flex;justify-content:space-between;font-size:1.15rem}.checkout{display:block;text-align:center;text-decoration:none;background:#d85c8b;color:white;border-radius:11px;padding:14px;margin-top:18px;font-weight:600}.empty{background:white;border-radius:15px;padding:28px}.empty a{color:#c84d7c}@media(max-width:520px){.cart-item{flex-wrap:wrap}.cart-item img{width:78px;height:78px}.remove{margin-left:auto}}
+  </style>
+</head>
+<body>
+  <header class="top"><a class="brand" href="index.html">🍦 Yummy Yummy Fruit Cream</a><a href="index.html">← Lanjut Belanja</a></header>
+  <main><a class="back" href="index.html">Home</a><h1>Keranjang Belanja 🛒</h1><p class="sub">Periksa pesanan es krim favoritmu sebelum checkout.</p>
+    <div id="cartItems"></div>
+    <section class="summary"><div class="total"><strong>Total</strong><strong id="grandTotal">Rp0</strong></div><a class="checkout" href="checkout.html">Lanjut ke Checkout <i class="fas fa-arrow-right"></i></a></section>
+  </main>
+<script>
+const CART_KEY='cart';const rupiah=n=>'Rp '+Number(n).toLocaleString('id-ID');
+function getCart(){try{const c=JSON.parse(localStorage.getItem(CART_KEY)||'[]');return Array.isArray(c)?c:[]}catch(e){return []}}
+function saveCart(c){localStorage.setItem(CART_KEY,JSON.stringify(c));renderCart()}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function renderCart(){const cart=getCart(),box=document.getElementById('cartItems');let total=0;if(!cart.length){box.innerHTML='<div class="empty">Keranjangmu masih kosong 🍨<br><br><a href="index.html">Yuk, pilih es krim favoritmu!</a></div>';document.getElementById('grandTotal').textContent=rupiah(0);return}box.innerHTML=cart.map((item,i)=>{const price=Number(item.price)||0,qty=Math.max(1,Number(item.quantity)||1);total+=price*qty;return `<article class="cart-item">${item.image?`<img src="${esc(item.image)}" alt="${esc(item.name)}">`:''}<div class="details"><h3>${esc(item.name||'Produk')}</h3><div class="price">${rupiah(price)}</div><div class="qty"><button aria-label="Kurangi jumlah" onclick="changeQty(${i},-1)">−</button><span>${qty}</span><button aria-label="Tambah jumlah" onclick="changeQty(${i},1)">+</button></div></div><button class="remove" onclick="removeItem(${i})"><i class="fas fa-trash"></i> Hapus</button></article>`}).join('');document.getElementById('grandTotal').textContent=rupiah(total)}
+function changeQty(i,n){const c=getCart();if(!c[i])return;c[i].quantity=(Number(c[i].quantity)||1)+n;if(c[i].quantity<=0)c.splice(i,1);saveCart(c)}function removeItem(i){const c=getCart();c.splice(i,1);saveCart(c)}renderCart();
+</script>
+</body></html>
